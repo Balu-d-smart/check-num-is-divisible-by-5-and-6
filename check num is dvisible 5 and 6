@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.io.*;
+class Main {
+void check(int m)
+{if(m%5==0&&m%6==0)
+ System.out.println(m +" is divisible by both 5 and 6" );
+ else if (m%5==0||m%6==0)
+ System.out.println(m +" is divisible by 5 or 6, but not both" );
+ else
+ System.out.println(m +" is not divisible by either 5 or 6" );
+}
+    public static void main(String[] args) 
+    {
+       Main obj= new Main();
+        System.out.println("enter number  ");
+       Scanner sc= new Scanner(System.in);
+      int m=sc.nextInt();
+      obj.check(m);
+    }
+    }
+   
